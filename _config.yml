@@ -1,13 +1,12 @@
 # Site settings
-name: Denominational Bitcoin Wallets
-title: Denominational Bitcoin Wallets
-email: ajkochanowicz@gmail.co
-description: Printable Bitcoin Wallets in fixed denominations set in beautiful design.
+name: Site Name
+title: Site Title
+email: ajkochanowicz@gmail.com
+description: Site description.
 username: ajkochanowicz
 twitter_username: yourwebsitesUX
-# Once Github updates to Jekyll 2, change baseurl to ""
-baseurl: "/bitcoinbills"
-url: "http://ajkochanowicz.github.io/bitcoinbills/"
+baseurl: ""
+url: "http://example.com/"
 
 # Build settings
 markdown: kramdown
