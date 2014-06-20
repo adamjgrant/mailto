@@ -1,0 +1,160 @@
+// Lato font, using only some styles for max page speed.
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400)
+// Montserrat
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400)
+
+$font-headings:      'proxima-nova', 'lato', 'adelle', sans-serif
+$font-paragraph:     'ff-meta-web-pro', 'montserrat', 'helvetica neue', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font-headings
+  font-weight: 500
+  margin: 0
+
+=xxl_heading
+  font-size: 4rem
+  line-height: 4.1rem
+  margin-bottom: 2.5rem
+  font-family: $font-headings
+  
+=xl_heading
+  font-size: 2.5rem
+  line-height: 3rem
+  margin-bottom: 1.5rem
+  font-family: $font-headings
+
+=lg_heading
+  font-size: 1.7rem
+  line-height: 2.1rem
+  margin-bottom: 1.2rem
+  font-family: $font-headings
+
+=md_heading
+  font-size: 1.3rem
+  line-height: 1.6rem
+  margin-bottom: 1rem 
+  font-family: $font-headings
+
+=sm_heading
+  font-size: 1rem
+  margin-bottom: 0.25rem 
+  font-family: $font-headings
+
+=xs_heading
+  font-size: 0.85rem
+  margin-bottom: 0.25rem 
+  font-family: $font-headings
+
+=xxs_heading
+  font-size: 0.7rem
+  margin-bottom: 0.25rem 
+  text-transform: uppercase
+  font-family: $font-headings
+
+p, em, strong, li, table, td, tr, label
+  color: hsl(48, 11%, 26%)
+
+p
+  margin: 0
+  margin-bottom: 1rem
+  + h1,
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6
+    margin-top: 2rem
+
+a
+  color: $blue
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.site-nav
+  h1
+    +sm_heading
+    margin-bottom: 0
+
+section.page
+  header 
+    h1
+      +lg_heading
+      word-wrap: break-word
+      text-align: center
+
+      +media($tablet)
+        text-align: left
+        +xl_heading
+
+      +media($desktop)
+        +xxl_heading
+
+section.home 
+  h1
+    +md_heading
+
+  h2
+    +sm_heading
+
+  h3
+    +xs_heading
+
+  +media($tablet)
+    h1
+      +lg_heading
+
+    h2
+      +md_heading
+
+    h3
+      +sm_heading
+
+.site-footer
+  h1
+    +md_heading 
+
+// Blog
+
+section.blog-index
+  h2
+    +xxs_heading
+
+  h3, h4
+    +sm_heading
+
+section.blog-single 
+  .post-header 
+    .meta
+      +xxs_heading
+      color: #999
+
+  .post-content
+    h1
+      +sm_heading
+    
+    h2
+      +xs_heading
+
+    h3
+      +xxs_heading
+
+    +media($tablet)
+      h1
+        +md_heading
+      
+      h2
+        +sm_heading
+
+      h3
+        +xs_heading
+
+    +media($tablet)
+      h1
+        +lg_heading
+      
+      h2
+        +md_heading
+
+      h3
+        +sm_heading

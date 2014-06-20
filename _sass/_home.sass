@@ -1,0 +1,29 @@
+.page.home
+
+  header
+    h1, h2
+      text-align: center
+      font-weight: 300
+
+    h1
+      margin-bottom: 0.4rem
+      font-size: 2rem
+      +media($tablet)
+        font-size: 3.5rem
+        line-height: 4rem
+
+    h2
+      margin-bottom: 2rem
+      font-size: 1.1rem
+    
+    img
+      margin: 0px auto
+
+    margin-bottom: 50px
+
+  main
+    +row
+
+    .download,
+    .create
+      +column('half')

@@ -1,0 +1,85 @@
+---
+---
+
+// Uncomment above when Jekyll has been updated.
+// @import _normalize
+@import _variables
+@import _mixins
+@import _typography
+@import _grid
+@import _footer
+@import _nav
+@import _blog
+@import _home
+
+html
+  font-family: $font-paragraph
+  font-size: 16px
+  color: $black
+  line-height: 1.6rem
+
+*
+  box-sizing: border-box
+
+p
+  margin-bottom: 1rem
+
+img 
+  max-width: 100%
+  display: block
+  margin:
+    bottom: 30px
+  min-width: 100%
+
+  +media($tablet)
+    min-width: 0
+
+  &.cc
+    min-width: 0
+
+// WRAPPING
+body
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+  padding-top: 60px
+  font-family: $font-paragraph
+  font-size: 1rem
+  overflow-x: hidden
+
+  +media($desktop)
+    padding-top: 100px
+
+body > main
+  flex: 1
+
+.wrapper
+  width: 100%
+  max-width: 1000px
+  padding: 15px
+  margin: 0px auto
+
+// CONTENT
+
+ul.posts
+  list-style: none
+  padding: 0
+  li
+    padding-bottom: 25px
+    a
+      padding: $navbarItemPadding 0
+    .post-date, .post-link
+      display: block
+    .post-date
+      font-size: 75%
+.menu-link
+  position: fixed
+  top: $navbarPadding
+  right: $navbarPadding
+  @media (min-width: $tablet)
+    display: none
+
+// ONE OFF NONSENSE
+
+.github iframe
+  margin-top: 20px !important
