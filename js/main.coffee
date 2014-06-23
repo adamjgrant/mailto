@@ -21,5 +21,15 @@ document.addEventListener 'DOMContentLoaded', ->
   buddySystem headings
   buddySystem paragraphs
 
-  # RetinaImages 
-  window.halfSize = (el) -> el.width/=2
+  # High Res Images
+  HDimgs = document.querySelectorAll '[data-hdimg]' 
+  (
+    image = new Image()
+    image.onload = ->
+      console.info 'Image loaded'
+      img.src = image.src
+      img.width = image.width/2
+    image.onerror = ->
+      console.error 'Could not load image'
+    image.src = img.dataset.hdimg
+  ) for img in HDimgs

@@ -17,14 +17,14 @@ $gutter: 30px
 
 =column($type, $offset: 0)
   +set-columns(12, $offset)
-  @if "half"
+  @if $type == "half"
     @media screen and (min-width: $tablet)
       +set-columns(6, 0)
 
     @media screen and (min-width: $desktop)
       +set-columns(6, $offset)
 
-  @else if "third" 
+  @else if $type == "third" 
     @media screen and (min-width: $tablet)
       +set-columns(6, 0)
 
