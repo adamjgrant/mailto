@@ -19,5 +19,7 @@
     "url": "https://github.com/ajkochanowicz/Seed/issues"
   },
   "homepage": "https://github.com/ajkochanowicz/Seed",
-  "devDependencies": {}
+  "devDependencies": {
+    "jade": "~1"
+  }
 }
