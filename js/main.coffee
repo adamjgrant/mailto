@@ -12,9 +12,9 @@ document.addEventListener 'DOMContentLoaded', ->
   menuLink.addEventListener('mousedown', toggleMenu)
 
   # BuddySystem 
-  buddySystem = (objs) ->
+  window.buddySystem = (objs) ->
     for o in objs
-      s = String o.innerHTML;(o.innerHTML = s.replace((new RegExp '((?:[^ ]* ){' + (s.match(/\s/g).length - 1) + '}[^ ]*) '),"$1&nbsp;")) if s
+      s = String o.innerHTML;(o.innerHTML = s.replace((new RegExp '((?:[^ ]* ){' + ((s.match(/\s/g) || 0).length - 1) + '}[^ ]*) '),"$1&nbsp;")) if s
 
   headings = document.querySelectorAll('h1')
   paragraphs = document.querySelectorAll('p')
@@ -22,14 +22,17 @@ document.addEventListener 'DOMContentLoaded', ->
   buddySystem paragraphs
 
   # High Res Images
-  HDimgs = document.querySelectorAll '[data-hdimg]' 
+  HDimgs = document.querySelectorAll '[srcset]'
+  Images = new Object()
   (
-    image = new Image()
-    image.onload = ->
-      console.info 'Image loaded'
-      img.src = image.src
-      img.width = image.width/2
-    image.onerror = ->
-      console.error 'Could not load image'
-    image.src = img.dataset.hdimg
+    Images[_i] = new Image()
+    Images[_i].src = img.srcset.split(' ')[0]
+    Images[_i].obj = img
+    Images[_i].onload = ->
+      console.info "Image loaded: #{this.src}"
+      this.obj.src = this.src
+      this.obj.style.width = "#{this.width / 2}px"
+      this.obj.removeAttribute 'srcset'
+    Images[_i].onerror = ->
+      console.error "Could not load image #{Images[_i].src}"
   ) for img in HDimgs
