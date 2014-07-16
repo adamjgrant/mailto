@@ -1,1 +1,1 @@
-console.log 'hello world'
+mailtos = document.querySelectorAll 'a[href^="mailto"]'
