@@ -1,8 +1,8 @@
 # Site settings
-name: Site Name
-title: Site Title
+name: Easy Mail Links
+title: Easy Mail Links
 email: ajkochanowicz@gmail.com
-description: Site description.
+description: Magically make your mailto links work as contact forms.
 username: ajkochanowicz
 twitter_username: yourwebsitesUX
 baseurl: ""
