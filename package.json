@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ajkochanowicz/Seed",
   "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-coffee": "^2.1.1",
     "jade": "~1"
   }
 }

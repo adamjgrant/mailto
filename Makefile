@@ -1,5 +1,5 @@
 build: 
-	@rvm use 2.0
+	@gulp
 	@jekyll serve --watch
 
 copy:
@@ -8,3 +8,4 @@ copy:
 
 setup:
 	@bundle install
+	@npm install
