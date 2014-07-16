@@ -1,5 +1,4 @@
 build: 
-	@gulp
 	@jekyll serve --watch
 
 copy:
