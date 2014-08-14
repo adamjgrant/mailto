@@ -1,0 +1,178 @@
+.mailto.ninja {
+  font-size: 18px;
+  height: 450px;
+  height: 85vh;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  overflow: auto;
+  height: 100%;
+  padding-top: 8px; }
+  .mailto.ninja h1, .mailto.ninja h2, .mailto.ninja h3, .mailto.ninja h4, .mailto.ninja h5, .mailto.ninja h6 {
+    font-weight: 100; }
+  .mailto.ninja * {
+    box-sizing: border-box; }
+  .mailto.ninja h1 {
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 15px; }
+  .mailto.ninja .growlContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 250px; }
+  .mailto.ninja .growl {
+    background-color: #d2e1f9;
+    color: #316dce;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #316dce;
+    border-radius: 5px; }
+    .mailto.ninja .growl h1 {
+      font-size: 1rem;
+      font-weight: bold; }
+    .mailto.ninja .growl.error {
+      background-color: red;
+      color: white; }
+    .mailto.ninja .growl.success {
+      background-color: #c7f4c7;
+      color: #206920;
+      border-color: #206920; }
+  .mailto.ninja h1, .mailto.ninja h2, .mailto.ninja h3, .mailto.ninja h4, .mailto.ninja h5, .mailto.ninja p {
+    margin: 0; }
+  .mailto.ninja h1 {
+    margin-bottom: 1.5rem; }
+  .mailto.ninja h2 {
+    margin-bottom: 1.4rem; }
+  .mailto.ninja h3 {
+    margin-bottom: 1.3rem; }
+  .mailto.ninja h4 {
+    margin-bottom: 1.2rem; }
+  .mailto.ninja h5 {
+    margin-bottom: 1.1rem; }
+  .mailto.ninja p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem; }
+  .mailto.ninja .snippet {
+    font-family: monospace;
+    font-size: 0.85rem; }
+  .mailto.ninja section.auth h1, .mailto.ninja section.auth h2, .mailto.ninja section.auth h3, .mailto.ninja section.auth h4, .mailto.ninja section.auth h5, .mailto.ninja section.auth p {
+    color: white; }
+  .mailto.ninja section.auth a {
+    color: white;
+    text-decoration: underline;
+    margin-right: 15px; }
+    .mailto.ninja section.auth a button {
+      text-decoration: none; }
+  .mailto.ninja body {
+    max-width: 600px;
+    padding: 25px;
+    margin: 0px auto; }
+  .mailto.ninja fieldset {
+    padding: 0 8px;
+    border: 0;
+    display: block;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #cccccc; }
+    .mailto.ninja fieldset.error {
+      border-color: red; }
+      .mailto.ninja fieldset.error label {
+        color: red; }
+    .mailto.ninja fieldset label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: #1854b4; }
+    .mailto.ninja fieldset p {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px; }
+  .mailto.ninja input[type="text"],
+  .mailto.ninja input[type="email"],
+  .mailto.ninja textarea {
+    width: 100%;
+    padding: 5px 0;
+    border: 0px;
+    font-size: 16px;
+    margin: 0;
+      margin-bottom: 5px; }
+    .mailto.ninja input[type="text"]:focus,
+    .mailto.ninja input[type="email"]:focus,
+    .mailto.ninja textarea:focus {
+      outline: 0; }
+  .mailto.ninja textarea {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 45px; }
+  .mailto.ninja footer nav.toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 45px;
+    border-top: 1px solid #b3c6cc;
+    background: #e3ebf7;
+    background: -moz-linear-gradient(top, #e3ebf7 0%, #d2e1f9 37%, #c0cee2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e3ebf7), color-stop(37%, #d2e1f9), color-stop(100%, #c0cee2));
+    background: -webkit-linear-gradient(top, #e3ebf7 0%, #d2e1f9 37%, #c0cee2 100%);
+    background: -o-linear-gradient(top, #e3ebf7 0%, #d2e1f9 37%, #c0cee2 100%);
+    background: -ms-linear-gradient(top, #e3ebf7 0%, #d2e1f9 37%, #c0cee2 100%);
+    background: linear-gradient(to bottom, #e3ebf7 0%, #d2e1f9 37%, #c0cee2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3ebf7', endColorstr='#c0cee2',GradientType=0 ); }
+    .mailto.ninja footer nav.toolbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      float: left;
+      height: 100%;
+      width: 48%; }
+      .mailto.ninja footer nav.toolbar ul:nth-child(2) {
+        float: right; }
+        .mailto.ninja footer nav.toolbar ul:nth-child(2) li {
+          float: right; }
+      .mailto.ninja footer nav.toolbar ul li {
+        display: table;
+        height: 100%; }
+        .mailto.ninja footer nav.toolbar ul li span, .mailto.ninja footer nav.toolbar ul li a, .mailto.ninja footer nav.toolbar ul li button {
+          display: table-cell;
+          vertical-align: middle; }
+        .mailto.ninja footer nav.toolbar ul li a.logo {
+          color: #1b5eca;
+          text-decoration: none;
+          font-size: 14px; }
+        .mailto.ninja footer nav.toolbar ul li button {
+          border: 0;
+          cursor: pointer;
+          margin-top: 8px;
+          margin-left: 7px;
+          padding: 6px 15px;
+          border-radius: 3px;
+          font-family: "Helvetica Neue", helvetica, sans-serif;
+          font-size: 14px;
+          color: #6296ea;
+          box-shadow: inset 0px 1px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.1);
+          background: transparent;
+          background: rgba(255, 255, 255, 0.25); }
+          .mailto.ninja footer nav.toolbar ul li button:hover {
+            background: rgba(255, 255, 255, 0.35); }
+          .mailto.ninja footer nav.toolbar ul li button:active {
+            background: rgba(255, 255, 255, 0.45); }
+          .mailto.ninja footer nav.toolbar ul li button:focus {
+            outline: 0; }
+          .mailto.ninja footer nav.toolbar ul li button#send {
+            box-shadow: inset 0px 1px rgba(255, 255, 255, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.1);
+            color: white;
+            background: #6296ea; }
+            .mailto.ninja footer nav.toolbar ul li button#send:hover {
+              background: #78a5ed; }
+            .mailto.ninja footer nav.toolbar ul li button#send:active {
+              background: #8eb4f0; }
+  .mailto.ninja .message {
+    position: relative; }
+    .mailto.ninja .message fieldset {
+      border-bottom: 0; }
+  .mailto.ninja .message, .mailto.ninja main.main {
+    height: 100%; }

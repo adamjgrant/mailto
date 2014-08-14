@@ -5,7 +5,7 @@ email: ajkochanowicz@gmail.com
 description: Magically make your mailto links work as contact forms.
 username: ajkochanowicz
 twitter_username: yourwebsitesUX
-baseurl: ""
+baseurl: "/blog"
 url: "http://example.com/"
 
 # Build settings

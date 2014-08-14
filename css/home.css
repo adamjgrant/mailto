@@ -1,0 +1,172 @@
+@import url("/bower_components/normalize.css/normalize.css");
+html {
+  font-size: 18px;
+  font-size: calc(14px + 0.25vw);
+  font-family: "museo-sans", "Helvetica Neue", "Helvetica", sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.grid-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap; }
+
+.navbar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 0 5px; }
+  .navbar p {
+    margin: 0; }
+  .navbar ul {
+    margin: 15px 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .navbar ul li {
+      list-style: none;
+      margin: 0px 10px; }
+      .navbar ul li span.title {
+        font-family: "Proxima Nova";
+        font-weight: 900;
+        text-transform: uppercase; }
+      .navbar ul li a {
+        text-decoration: none;
+        color: #254373; }
+        .navbar ul li a:hover {
+          text-decoration: underline; }
+        .navbar ul li a:visited {
+          color: #254373; }
+
+.pagenav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 0 0px;
+  background-color: #306dcf;
+  border-bottom: 0; }
+  .pagenav p {
+    margin: 0; }
+  .pagenav ul {
+    margin: 10px 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .pagenav ul li {
+      list-style: none;
+      margin: 0px 10px; }
+      .pagenav ul li span.title {
+        font-family: "Proxima Nova";
+        font-weight: 900;
+        text-transform: uppercase; }
+      .pagenav ul li a {
+        text-decoration: none;
+        color: #254373; }
+        .pagenav ul li a:hover {
+          text-decoration: underline; }
+        .pagenav ul li a:visited {
+          color: #254373; }
+  .pagenav li {
+    color: #254373; }
+
+.navbar.main, .pagenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.pagenav {
+  top: calc(45px + 0.25vw); }
+
+h1, h2, h3, h4, h5 {
+  font-family: "myriad-pro-semi-condensed", helvetica, sans-serif; }
+
+h1, h2, h3, h4, h5, p {
+  margin: 0; }
+
+h1 {
+  font-size: 1.7rem;
+  font-size: calc(1.7rem + scalingFactor);
+  margin-bottom: 0.75rem; }
+
+h2 {
+  margin-bottom: 0.75rem; }
+
+h3 {
+  margin-bottom: 0.75rem; }
+
+h4 {
+  margin-bottom: 0.75rem; }
+
+h5 {
+  margin-bottom: 0.5rem; }
+
+p {
+  margin-bottom: 1.75rem;
+  line-height: 1.5rem; }
+
+.snippet {
+  font-family: monospace;
+  font-size: 0.85rem; }
+
+section.auth h1, section.auth h2, section.auth h3, section.auth h4, section.auth h5, section.auth p {
+  color: white; }
+section.auth a {
+  color: white;
+  text-decoration: underline;
+  margin-right: 15px; }
+  section.auth a button {
+    text-decoration: none; }
+
+body {
+  padding-top: 100px;
+  padding-top: calc(100px + 0.25vw); }
+  body.auth-screen {
+    background-color: #333333; }
+
+.wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px; }
+
+input[type="email"], input[type="password"], input[type="text"] {
+  display: block;
+  margin-bottom: 15px;
+  padding: 7px;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #333333;
+  border-radius: 3px; }
+
+button, input[type="submit"] {
+  font-size: 1rem;
+  padding: 7px 15px;
+  background-color: #306dcf;
+  border: 1px solid #254373;
+  color: #254373;
+  border-radius: 5px;
+  cursor: pointer; }
+  button:hover, input[type="submit"]:hover {
+    background: #254373;
+    color: white; }
+  button:focus, input[type="submit"]:focus {
+    outline: 0; }
+
+a {
+  cursor: pointer; }
